@@ -30,7 +30,7 @@ export function swap<T, U, V>(f: (x: T, y: U) => V) {
         return f(x, y);
     }
 }
-export function curry<T, U extends any[]>(f: (...args: [T, ...U]) => any) {
+export function curry<T, U extends any[], V>(f: (...args: [T, ...U]) => V) {
     return function (x: T) {
         return f.bind(null, x);
     }

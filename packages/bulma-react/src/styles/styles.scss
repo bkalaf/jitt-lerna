@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+$amber: #ffc107;
+$amber-invert: findColorInvert($amber);
+$blue-gray: #607d8b;
+$blue-gray-invert: findColorInvert($blue-gray);
+$blue: #2196f3;
+$blue-invert: findColorInvert($blue);
+$brown: #5d4037;
+$brown-invert: findColorInvert($brown);
+$cyan: #00bcd4;
+$cyan-invert: findColorInvert($cyan);
+$deep-orange: #ff5722;
+$deep-orange-invert: findColorInvert($deep-orange);
+$deep-purple: #673ab7;
+$deep-purple-invert: findColorInvert($deep-purple);
+$green: #4caf50;
+$green-invert: findColorInvert($green);
+$indigo: #3f51b5;
+$light-blue: #03a9f4;
+$light-green: #8bc34a;
+$lime: #cddc39;
+$orange: hsl(36, 100%, 50%);
+$pink: #f50057;
+$purple: #9c27b0;
+$red: #f44336;
+$teal: #009688;
+$yellow: #ffeb3b;
+
+@import "~bulma/sass/utilities/derived-variables";
+
+$addColors: (
+    "amber": ($amber, findColorInvert($amber), findLightColor($amber), findDarkColor($amber)),
+    "red": ($red, findColorInvert($amber), findLightColor($red), findDarkColor($red)),
+    "orange": ($orange, findColorInvert($orange), findLightColor($orange), findDarkColor($orange)),
+    "yellow": ($yellow, findColorInvert($yellow), findLightColor($yellow), findDarkColor($yellow)),
+    "lime": ($lime, findColorInvert($lime), findLightColor($lime), findDarkColor($lime)),
+    "cyan": ($cyan, findColorInvert($cyan), findLightColor($cyan), findDarkColor($cyan)),
+    "blue-gray": ($blue-gray, findColorInvert($blue-gray), findLightColor($blue-gray), findDarkColor($blue-gray)),
+    "deep-orange": ($deep-orange, findColorInvert($deep-orange), findLightColor($deep-orange), findDarkColor($deep-orange)),
+    "deep-purple": ($deep-purple, findColorInvert($deep-purple), findLightColor($deep-purple), findDarkColor($deep-purple)),
+    "purple": ($purple, findColorInvert($purple), findLightColor($purple), findDarkColor($purple)),
+    "blue": ($blue, findColorInvert($blue), findLightColor($blue), findDarkColor($blue)),
+    "indigo": ($indigo, findColorInvert($indigo), findLightColor($indigo), findDarkColor($indigo)),
+    "teal": ($teal, findColorInvert($teal), findLightColor($teal), findDarkColor($teal)),
+    "pink": ($pink, findColorInvert($pink), findLightColor($pink), findDarkColor($pink)),
+    "light-green": ($light-green, findColorInvert($light-green), findLightColor($light-green), findDarkColor($light-green)),
+    "light-blue": ($light-blue, findColorInvert($light-blue), findLightColor($light-blue), findDarkColor($light-blue))
+    "green": ($green, findColorInvert($green), findLightColor($green), findDarkColor($green))
+);
+
+$colors: mergeColorMaps($colors, $addColors);
+
+@import "~bulma/sass/utilities/mixins";
+@import "~bulma/sass/utilities/controls";
+@import "~bulma/sass/utilities/extends";
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/elements/_all";
+@import "~bulma/sass/form/_all";
+@import "~bulma/sass/components/_all";
+@import "~bulma/sass/grid/_all";
+@import "~bulma/sass/helpers/_all";
+@import "~bulma/sass/layout/_all";
+

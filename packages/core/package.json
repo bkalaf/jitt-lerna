@@ -4,7 +4,6 @@
   "main": "src/index.ts",
   "author": "Bobby Kalaf <bobby.kalaf@gmail.com> (https://www.github.com/bkalaf)",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",

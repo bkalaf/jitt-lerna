@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "packages/irma"
+		},
+		{
+			"path": "packages/functions"
 		}
 	],
 	"settings": {}
