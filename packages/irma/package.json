@@ -1,7 +1,7 @@
 {
-  "name": "@jitt/core",
+  "name": "@jitt/irma",
   "version": "0.0.2",
-  "main": "src/index.ts",
+  "main": "index.js",
   "author": "Bobby Kalaf <bobby.kalaf@gmail.com> (https://www.github.com/bkalaf)",
   "license": "MIT",
   "private": true,

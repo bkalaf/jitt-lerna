@@ -1,12 +1,17 @@
 {
-  "name": "@jitt/core",
+  "name": "@jitt/bulma-react",
   "version": "0.0.2",
-  "main": "src/index.ts",
+  "main": "index.js",
   "author": "Bobby Kalaf <bobby.kalaf@gmail.com> (https://www.github.com/bkalaf)",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@jitt/core": "^0.0.2",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
     "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   }

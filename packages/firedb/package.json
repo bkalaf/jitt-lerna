@@ -1,11 +1,12 @@
 {
-  "name": "@jitt/core",
+  "name": "@jitt/firedb",
   "version": "0.0.2",
-  "main": "src/index.ts",
+  "main": "index.js",
   "author": "Bobby Kalaf <bobby.kalaf@gmail.com> (https://www.github.com/bkalaf)",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "firebase-tools": "^9.6.1",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
