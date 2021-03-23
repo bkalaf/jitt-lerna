@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "packages/core"
+		},
+		{
+			"path": "packages/bulma-react"
+		},
+		{
+			"path": "packages/firedb"
+		},
+		{
+			"path": "packages/irma"
+		}
+	],
+	"settings": {}
+}
