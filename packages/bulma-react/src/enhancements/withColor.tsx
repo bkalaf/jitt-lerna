@@ -6,6 +6,7 @@ import { $CN } from '../cn';
 export interface ColorProps {
     color?: Colors;
 }
+
 export function withColor<T extends BaseProps>(
     Component: React.FunctionComponent<T>
 ) {
