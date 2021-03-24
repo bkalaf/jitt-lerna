@@ -1,19 +1,14 @@
 import React from 'react';
 import { $CN } from '../cn';
 import { BaseProps } from '../components/BaseProps';
-
-type FontSize = 1 | 2 | 3 | 4 | 5 | 6 | 7;
-type TextAlignment = 'left' | 'right' | 'centered' | 'justified';
-type TextTransform = 'capitalized' | 'uppercase' | 'lowercase' | 'italic';
-type FontWeight = 'light' | 'normal' | 'bold' | 'semibold' | 'medium';
-type FontFamily = 'sans-serif' | 'monospace' | 'primary' | 'secondary' | 'code';
+import { Typography } from '../enums';
 
 interface TypographyProps extends BaseProps {
-    fs?: FontSize;
-    fw?: FontWeight;
-    transform?: TextTransform;
-    textDir?: TextAlignment;
-    font?: FontFamily;
+    fs?: Typography['FontSize'];
+    fw?: Typography['FontWeight'];
+    transform?: Typography['TextTransform'];
+    textDir?: Typography['TextAlignment'];
+    font?: Typography['FontFamily'];
 }
 
 export function withTypography<T extends BaseProps>(Component: React.FunctionComponent<T>) {
