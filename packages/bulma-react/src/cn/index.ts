@@ -10,5 +10,6 @@ export const $CN = {
     ifPrefix: ifPrefix,
     appendToProps: appendToProps,
     concatCN: concatClasses,
-    collect: collect
+    collect: collect,
+    put: function(cn: string) { return [cn]; }
 };
